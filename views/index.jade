@@ -1,0 +1,47 @@
+extends layout
+
+block content
+  .body-content
+    .page-header
+        h1 Welcome to PrepayGo Portal
+    
+    #resp
+    .row
+        .col-lg-6
+            div.panel.panel-primary
+                .panel-heading
+                    h3 Infrequent User
+                .panel-body
+                    .lead Make purchases without having to register or login
+                    p
+                        a(href="/once").btn.btn-success Buy Now
+                ul.list-group
+                    li.list-group-item No need to register or login
+                    li.list-group-item Pay via voucher or card
+  
+        .col-lg-6
+            div.panel.panel-success
+                .panel-heading
+                    h3 Frequent User
+                .panel-body
+                    form#login.forms
+                        .form-group
+                            .input-group
+                                span.input-group-addon.input-large
+                                    img(src="images/User.png", width="24px")
+                                input(type="text", placeholder="username")#login_uname.form-control.input-large
+                        .form-group
+                            .input-group
+                                span.input-group-addon.input-large
+                                    img(src="images/Key.png", width="24px")
+                                input(type="password", placeholder="password")#login_pword.form-control.input-large
+                        .form-group
+                            button(type="button")#login_submit.btn.btn-success Log In
+                            a(href="/reset").btn.btn-warning Password Recovery
+                            a(href="/reg").btn.btn-info Register
+                ul.list-group
+                    li.list-group-item Maintain an account
+                    li.list-group-item Store multiple meters
+                    li.list-group-item View past transactions
+                    li.list-group-item Re-print tokens
+                    li.list-group-item Pay via voucher or card

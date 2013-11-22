@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    .body-content
+        .resp
+        .row
+        .col-lg-12
+            form.forms
+                .form-header Register
+                .form-group
+                    .input-group
+                        span.input-group-addon.input-large
+                            img(src="images/User.png", width="24px")
+                        input(type="text", placeholder="username")#reg_uname.form-control.input-large
+                .form-group
+                    .input-group
+                        span.input-group-addon
+                            img(src="images/Key.png", width="24px")
+                        input(type="password", placeholder="password")#reg_pword.form-control.input-large
+                .form-group
+                    .input-group
+                        span.input-group-addon.input-large
+                            img(src="images/Key.png", width="24px")
+                        input(type="password", placeholder="password confirmation")#reg_pword_2.form-control.input-large
+                .form-group
+                    .input-group
+                        span.input-group-addon.input-large
+                            img(src="images/Address%20Book.png", width="24px")
+                        input(type="tel", placeholder="phone number")#reg_phone.form-control.input-large
+                .form-group
+                    .input-group
+                        span.input-group-addon.input-large
+                            img(src="images/Message.png", width="24px")
+                        input(type="email", placeholder="email address")#reg_email.form-control.input-large
+                .form-group
+                    button(type="button")#reg_submit.btn.btn-large.btn-warning Register Now

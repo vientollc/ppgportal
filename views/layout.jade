@@ -1,0 +1,30 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='http://www.parsecdn.com/js/parse-1.2.9.min.js')
+  body
+    .navbar.navbar-inverse
+        .container
+            button(type="button", data-toggle="collapse", data-target=".nav-collapse").navbar-toggle
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a(href="/").navbar-brand #{title}
+            div.navbar-collapse.collapse
+                ul.nav.navbar-nav
+    .container
+        block content
+    hr
+    footer
+        p
+            &copy; PrepayGo, 2013
+            img(src="images/ppg/PREPAYGO.png" height="50px")
+            img(src="images/ppg/PHCN.png" height="100px")
+    script(type='text/javascript', src='javascripts/jquery-2.0.2.min.js')
+    script(type='text/javascript', src='javascripts/bootstrap.min.js')
+    script(type='text/javascript', src='javascripts/app.js')
+    script(type='text/javascript', src='javascripts/mustache.js')

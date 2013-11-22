@@ -1,0 +1,60 @@
+extends layout
+
+block content
+    .body-content
+        .page-header
+            h1 Pay Bill or Buy Token
+        .resp
+        .row
+            .col-lg-6
+                div.panel.panel-primary
+                    .panel-heading
+                        h3 Transaction Details
+                    .panel-body
+                        form#buyOnceForm
+                            .form-group
+                                select#disco.form-control.input-large
+                                    option(value="ib") Ibadan
+                                    option(value="fct") Abuja FCT
+                            .form-group
+                                select#type.form-control.input-large
+                                    option(value="post") Post Paid
+                                    option(value="pre") Pre Paid
+                            .form-group
+                                .input-group
+                                    input(type="text", placeholder="account number")#mtr.form-control.input-large
+                                    span.input-group-addon
+                                        button#validateMeter.btn.btn-primary Validate
+                            .form-group
+                                .input-group
+                                    span.input-group-addon.input-large
+                                        img(src="images/Address%20Book.png", width="24px")
+                                    input(type="number", placeholder="phone number")#phone.form-control.input-large
+                            .form-group
+                                .input-group
+                                    span.input-group-addon.input-large
+                                        img(src="images/Message.png", width="24px")
+                                    input(type="email", placeholder="email").form-control.input-large
+                            .form-group
+                                .button-group
+                                    button(data-target="#voucherModal", data-toggle="modal").btn.btn-primary Pay with Voucher
+                                    button(data-target="#cardModal", data-toggle="modal").btn.btn-success Pay with Card
+                                    input(type="hidden")#receipt
+            .col-lg-6
+                .panel.panel-success
+                    .panel-heading
+                        h3 Information
+                    .panel-body#meterInfo
+                    
+    //Voucher Modal Window 
+    div(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")#voucherModal.modal.fade
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    button(type="button", data-dismiss="modal", aria-hidden="true").close &times;
+                    h4 Voucher Payment
+                .modal-body
+                    .form-group
+                        input(type="text", placeholder="voucher PIN")#voucher.form-control
+                .modal-footer
+                    button(type="button")#payWithVoucher.btn.btn-success Pay

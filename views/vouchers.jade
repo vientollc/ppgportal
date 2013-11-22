@@ -1,0 +1,20 @@
+extends layoutVouchers
+
+block content
+    .body-content
+        .page-header
+            h1 Login
+                span#username
+        .panel.panel-danger
+            .panel-heading
+                h3 Login to Voucher Admin
+            .panel-body
+                form
+                    .form-group
+                        input(type="text", placeholder="username").form-control.input-large#adminu
+                    .form-group
+                        input(type="password", placeholder="password").form-control.input-large#adminp
+            .panel-footer
+                div#resp
+                button(type="button").btn.btn-danger#adminLogin Login
+                button(type="button").btn.btn-warning#adminReset Password Recovery

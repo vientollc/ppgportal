@@ -1,0 +1,121 @@
+.forms {
+    display: block;
+    position: relative;
+    padding: 10px;
+    
+    width: 80%;
+    margin: 20px auto; /* center control on screen */
+    
+    background-color: #fff;
+    
+    
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+}
+
+.form-header {
+    display: block;
+    position: relative;
+    
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 0 0;
+    color: #222;
+    font-size: x-large;
+    font-weight: bold;
+    
+    border-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #090;
+    
+    background-color: #ddd;
+}
+
+.receipt {
+    display: block;
+    position: relative;
+    padding: 10px;
+    
+    width: 80%;
+    margin: 10px auto;
+    
+    background-color: #fff;
+    
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.receipt-header {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #999;
+}
+
+.receipt-customer {
+    display: block;
+    position: relative;
+    padding: 10px;
+    
+    width: 90%;
+    
+    background-color: #fff;
+    
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #333;
+    
+    font-size: 0.7em;
+    color: #777;
+}
+
+.receipt-cust-name {
+    display: block;
+    color: #333;
+}
+
+.receipt-cust-addr {
+    display: block;
+    color: #666;
+}
+
+.receipt-cust-phone {
+    display: block;
+    color: #090;
+}
+
+.receipt-cust-email {
+    display: block;
+    color: #0d0;
+}
+
+.receipt-body {
+    display: block;
+    color: #444;
+    font-size: 1.2em;
+    font-family: serif;
+    font-weight: 700;
+}
+
+.receipt-sim h3 {
+    color: #333;
+    font-weight: 900;
+}
+
+.receipt-card h3 {
+    color: #333;
+    font-weight: 900;
+}
+
+.receipt-footer {
+    width: 100%;
+    padding: 20px auto;
+    text-align: center;
+}
+
+.landing {
+    padding: 20px auto;
+    text-align: center;
+    font-family:sans-serif;
+    color: #333;
+    font-weight: bold;
+}

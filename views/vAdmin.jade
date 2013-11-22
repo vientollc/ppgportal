@@ -1,0 +1,51 @@
+extends layoutSecure
+
+block content
+    .body-content
+        .page-header
+            h1 Voucher Administration
+                span#username
+        div#resp
+        .row
+            .col-lg-4
+                .panel.panel-success
+                    .panel-heading
+                        h4 Generate Vouchers
+                    .panel-body
+                        form(action="/generate", method="POST")
+                            .form-group
+                                label Value
+                                select(name="va").form-control.input-large#va
+                                    option(value="1000") 1000
+                                    option(value="2000") 2000
+                                    option(value="5000") 5000
+                            .form-group
+                                label Quantity
+                                select(name="vq").form-control.input-large#vq
+                                    option(value="100") 100
+                                    option(value="500") 500
+                                    option(value="1000") 1000
+                                    option(value="2000") 2000
+                                    option(value="5000") 5000
+                            .form-group
+                                button.btn.btn-success#generate Generate
+            .col-lg-4
+                .panel.panel-warning
+                    .panel-heading
+                        h4 Voucher Status
+                    .panel-body
+                        form
+                            .form-group
+                                input(placeholder="batch number", name="vb").form-control.input-large#vb
+                            .form-group
+                                label Status
+                                select(name="vs").form-control.input-large#vs
+                                    option(value="inactive") inactive
+                                    option(value="active") active
+                                    option(value="transit") transit
+                                    option(value="stolen") stolen
+                                    option(value="lost") lost
+                                    option(value="damaged") damaged
+                    .panel-footer
+                        button(type="button").btn.btn-default Change Status
+            .col-lg-4

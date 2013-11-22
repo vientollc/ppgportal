@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    .body-content
+        .page-header
+            h1 Password Recovery
+        .resp
+        .row
+            .col-lg-12
+                form.forms
+                    .form-header Password Recovery
+                    .form-group
+                        .input-group
+                            span.input-group-addon.input-large
+                                img(src="images/Message.png", width="24px")
+                            input(type="email", placeholder="email address")#reset_email.form-control.input-large
+                    .form-group
+                        button#reset_submit.btn.btn-large Reset Password
